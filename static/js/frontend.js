@@ -10,6 +10,7 @@ function getProducts() {
       var products = data.split(";");
 
       let list = document.getElementById("list");
+      list.innerHTML = ""
 
       for (let index = 0; index < products.length; index++) {
         let element = document.createElement("li");
