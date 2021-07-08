@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./static/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <form method="POST" action="/add-product">
+      <div class="field">
+        <label class="label">Product Name</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-right" type="text" name="product" placeholder="Enter product name">
+          <span class="icon is-small is-left">
+            <i class="fas fa-store"></i>
+          </span>
+          <!-- <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success">This username is available</p> -->
+        </div>
+
+        <div class="field">
+          <label class="label">Cost</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-right" type="text" name="cost" placeholder="Product Cost">
+            <span class="icon is-small is-left">
+              <i class="fas fa-badge-dollar"></i>
+            </span>
+            <!-- <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p> -->
+          </div>
+
+          <br>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="submit button is-link">Save</button>
+            </div>
+            <div class="control">
+              <button id="show" class="button is-link is-light">Show Products</button>
+            </div>
+            <script type="text/javascript" src="./static/js/frontend.js"></script>
+          </div>
+    </form>
+  </div>
+  <hr>
+  <b>Products:</b>
+  <ul id="list" class="content"></ul>
+</body>
+</html>
